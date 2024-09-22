@@ -1,0 +1,49 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Lengend",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Values",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "general": {
+            "properties": {
+                "formatString": {
+                    "type": {
+                        "formatting": {
+                            "formatString": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    "privileges": []
+}

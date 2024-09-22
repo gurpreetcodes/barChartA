@@ -1,0 +1,35 @@
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.chart-container .chart-svg {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;
+}
+.chart-container .inputs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.chart-container .inputs-container input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+}
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputs-container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+
+/*# sourceMappingURL=https://localhost:8080/assets/visual.css.map*/
